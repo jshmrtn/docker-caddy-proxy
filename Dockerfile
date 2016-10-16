@@ -11,6 +11,7 @@ RUN mkdir -p /tmp/caddy \
  && curl -sL -o /tmp/caddy/caddy_linux_amd64.tar.gz "https://github.com/mholt/caddy/releases/download/$CADDY_VERSION/caddy_linux_amd64.tar.gz" \
  && tar -zxf /tmp/caddy/caddy_linux_amd64.tar.gz -C /tmp/caddy \
  && mv /tmp/caddy/caddy /usr/bin/ \
+ && mv /tmp/caddy/caddy_linux_amd64 /tmp/caddy/caddy \
  && chmod +x /usr/bin/caddy \
  && rm -rf /tmp/caddy
 
